@@ -1,0 +1,45 @@
+echo "# SI_2023_lab1_183164" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M master
+git remote add origin https://github.com/pandzarov/SI_2023_lab1_183164.git
+git push -u origin master
+echo "" > SILab1.java
+git add SILab1.java
+git commit -m "Add java class"
+git push
+git branch bug1
+git branch bug2
+git branch bug3
+git checkout bug1
+git commit -a -m " Fix wrong loop for reading"
+git push --set-upstream origin bug1
+git checkout bug2
+git commit -a -m "Fix wrong condition in filterOddNumbers"
+git push --set-upstream origin bug2
+git checkout bug3
+git commit -a -m "Fix method sumEvenNumbers"
+git push --set-upstream origin bug3
+git checkout master
+git pull --all
+git merge bug1
+git pull --all
+git merge bug2
+git pull --all
+git checkout bug3
+git rebase master
+git rebase --skip
+git commit -a -m "Fix method sumEvenNumbers"
+git pull --all
+git push
+git checkout master
+git merge bug3
+git pull --all
+git add 183164.txt
+git commit -m "Add 183164.txt to the project"
+git push
+
+Прашањето број 18 "Спојте ја гранката bug1 кон гранката master" се извршува со git merge bug1 при што сите поромени од bug1 се пренесуваат во master. Немаше никакви конфликти.
+Прашањето број 20 "Спојте ја гранката bug2 кон гранката master" се извршува со git merge bug2 при што сите поромени од bug2 се пренесуваат во master. Немаше никакви конфликти.
+Прашањето број 25 "Спојте ја гранката bug2 кон гранката master" се извршува со git merge bug3 при што сите поромени од bug3 се пренесуваат во master. Немаше никакви конфликти кога ја изврши оваа команда но имаше предходно кога пробав да направам rebase и тие конфликти ги решив рачно.
