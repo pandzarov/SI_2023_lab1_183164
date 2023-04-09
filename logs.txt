@@ -1,0 +1,170 @@
+PS C:\Users\damja\Desktop\SI_2023_lab1_183164 new> echo "# SI_2023_lab1_183164" >> README.md
+PS C:\Users\damja\Desktop\SI_2023_lab1_183164 new> git init
+Initialized empty Git repository in C:/Users/damja/Desktop/SI_2023_lab1_183164 new/.git/
+PS C:\Users\damja\Desktop\SI_2023_lab1_183164 new> git add README.md
+PS C:\Users\damja\Desktop\SI_2023_lab1_183164 new> git commit -m "first commit"
+[master (root-commit) 9359a53] first commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 README.md
+PS C:\Users\damja\Desktop\SI_2023_lab1_183164 new> git branch -M master
+PS C:\Users\damja\Desktop\SI_2023_lab1_183164 new> git remote add origin https://github.com/pandzarov/SI_2023_lab1_183164.git
+PS C:\Users\damja\Desktop\SI_2023_lab1_183164 new> git push -u origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 263 bytes | 263.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/pandzarov/SI_2023_lab1_183164.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+PS C:\Users\damja\Desktop\SI_2023_lab1_183164 new> git add SILab1.java
+fatal: pathspec 'SILab1.java' did not match any files
+PS C:\Users\damja\Desktop\SI_2023_lab1_183164 new> echo "" > SILab1.java
+PS C:\Users\damja\Desktop\SI_2023_lab1_183164 new> git add SILab1.java
+PS C:\Users\damja\Desktop\SI_2023_lab1_183164 new> git commit -m "Add java class"
+[master cfa6184] Add java class
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 SILab1.java
+PS C:\Users\damja\Desktop\SI_2023_lab1_183164 new> git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 730 bytes | 730.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/pandzarov/SI_2023_lab1_183164.git
+   9359a53..cfa6184  master -> master
+PS C:\Users\damja\Desktop\SI_2023_lab1_183164 new> git branch bug1
+PS C:\Users\damja\Desktop\SI_2023_lab1_183164 new> git branch bug2
+PS C:\Users\damja\Desktop\SI_2023_lab1_183164 new> git branch bug3
+PS C:\Users\damja\Desktop\SI_2023_lab1_183164 new> git checkout bug1
+Switched to branch 'bug1'
+PS C:\Users\damja\Desktop\SI_2023_lab1_183164 new> git commit -a -m " Fix wrong loop for reading"
+[bug1 8073d3f]  Fix wrong loop for reading
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+PS C:\Users\damja\Desktop\SI_2023_lab1_183164 new> git push --set-upstream origin bug1
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 331 bytes | 331.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'bug1' on GitHub by visiting:
+remote:      https://github.com/pandzarov/SI_2023_lab1_183164/pull/new/bug1
+remote:
+To https://github.com/pandzarov/SI_2023_lab1_183164.git
+ * [new branch]      bug1 -> bug1
+branch 'bug1' set up to track 'origin/bug1'.
+PS C:\Users\damja\Desktop\SI_2023_lab1_183164 new> git checkout bug2
+Switched to branch 'bug2'
+PS C:\Users\damja\Desktop\SI_2023_lab1_183164 new> git commit -a -m "Fix wrong condition in filterOddNumbers"
+[bug2 d06e86b] Fix wrong condition in filterOddNumbers
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+PS C:\Users\damja\Desktop\SI_2023_lab1_183164 new> git push --set-upstream origin bug2
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 343 bytes | 343.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'bug2' on GitHub by visiting:
+remote:      https://github.com/pandzarov/SI_2023_lab1_183164/pull/new/bug2
+remote:
+To https://github.com/pandzarov/SI_2023_lab1_183164.git
+ * [new branch]      bug2 -> bug2
+branch 'bug2' set up to track 'origin/bug2'.
+PS C:\Users\damja\Desktop\SI_2023_lab1_183164 new> git checkout bug3
+Switched to branch 'bug3'
+PS C:\Users\damja\Desktop\SI_2023_lab1_183164 new> git commit -a -m "Fix method sumEvenNumbers"
+[bug3 9a0415a] Fix method sumEvenNumbers
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+PS C:\Users\damja\Desktop\SI_2023_lab1_183164 new> git push --set-upstream origin bug3
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 353 bytes | 353.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'bug3' on GitHub by visiting:
+remote:      https://github.com/pandzarov/SI_2023_lab1_183164/pull/new/bug3
+remote:
+To https://github.com/pandzarov/SI_2023_lab1_183164.git
+ * [new branch]      bug3 -> bug3
+branch 'bug3' set up to track 'origin/bug3'.
+PS C:\Users\damja\Desktop\SI_2023_lab1_183164 new> git checkout master
+Switched to branch 'master'
+PS C:\Users\damja\Desktop\SI_2023_lab1_183164 new> git pull --all
+Fetching origin
+Already up to date.
+PS C:\Users\damja\Desktop\SI_2023_lab1_183164 new> git merge bug1
+"Merge completed successfully."
+PS C:\Users\damja\Desktop\SI_2023_lab1_183164 new> git merge bug2
+"Merge completed successfully."
+PS C:\Users\damja\Desktop\SI_2023_lab1_183164 new> git checkout bug3
+Switched to branch 'bug3'
+Your branch is up to date with 'origin/bug3'.
+PS C:\Users\damja\Desktop\SI_2023_lab1_183164 new> git rebase master
+warning: Cannot merge binary files: SILab1.java (HEAD vs. 9a0415a (Fix method sumEvenNumbers))
+Auto-merging SILab1.java
+CONFLICT (content): Merge conflict in SILab1.java
+error: could not apply 9a0415a... Fix method sumEvenNumbers
+hint: Resolve all conflicts manually, mark them as resolved with
+hint: "git add/rm <conflicted_files>", then run "git rebase --continue".
+hint: You can instead skip this commit: run "git rebase --skip".
+hint: To abort and get back to the state before "git rebase", run "git rebase --abort".
+Could not apply 9a0415a... Fix method sumEvenNumbers
+PS C:\Users\damja\Desktop\SI_2023_lab1_183164 new> git rebase --continue
+Successfully rebased and updated refs/heads/bug3.
+PS C:\Users\damja\Desktop\SI_2023_lab1_183164 new> git checkout master
+Switched to branch 'master'
+PS C:\Users\damja\Desktop\SI_2023_lab1_183164 new> git pull --all
+Fetching origin
+Already up to date.
+PS C:\Users\damja\Desktop\SI_2023_lab1_183164 new> git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 343 bytes | 343.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'bug2' on GitHub by visiting:
+remote:      https://github.com/pandzarov/SI_2023_lab1_183164/pull/new/bug2
+remote:
+PS C:\Users\damja\Desktop\SI_2023_lab1_183164 new> git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+PS C:\Users\damja\Desktop\SI_2023_lab1_183164 new> git merge bug3
+Updating 8073d3f..e9740f2
+Fast-forward
+ SILab1.java | Bin 2006 -> 2006 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+PS C:\Users\damja\Desktop\SI_2023_lab1_183164 new> git pull --all
+Fetching origin
+remote: Enumerating objects: 8, done.
+remote: Counting objects: 100% (8/8), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (4/4), 1.28 KiB | 131.00 KiB/s, done.
+From https://github.com/pandzarov/SI_2023_lab1_183164
+   8073d3f..3857b1d  master     -> origin/master
+   9a0415a..56295d6  bug3       -> origin/bug3
+PS C:\Users\damja\Desktop\SI_2023_lab1_183164 new> git add 183164.txt
+PS C:\Users\damja\Desktop\SI_2023_lab1_183164 new> git commit -m "Add 183164.txt to the project"
+[master 725e1d8] Add 183164.txt to the project
+PS C:\Users\damja\Desktop\SI_2023_lab1_183164 new> git push
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 1.30 KiB | 1.30 MiB/s, done.
+Total 6 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/pandzarov/SI_2023_lab1_183164.git
+   3857b1d..725e1d8  master -> master
